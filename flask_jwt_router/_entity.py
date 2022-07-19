@@ -182,6 +182,8 @@ class Entity(BaseEntity):
             return result
         except KeyError as _:
             return None
+        except Exception as _: 
+            return None
 
     def _attach_method(self) -> None:
         """
